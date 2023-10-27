@@ -1,0 +1,87 @@
+.box {
+  max-width: 1920px;
+  display: grid;
+  background-color: bisque;
+  grid-template-columns: repeat(3, 1fr);
+}
+.thank-you-message{
+  width: 300px;
+  height: 300px;
+  padding: 5;
+  background-color: aqua;
+  border: 2px solid rgb(154, 154, 197);
+  border-radius: 10px;
+}
+.score {
+  display: flex;
+  border: 2px solid green;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5rem; /* Use relative units for padding */
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Outer {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  height: 100vh; /* Center align vertically */
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center align text horizontally */
+}
+
+.hill {
+  width: 120px;
+  height: 150px;
+  border: 2px solid rgb(154, 154, 197);
+  border-radius: 10px;
+}
+
+/* CSS for small devices below 640px */
+@media screen and (max-width: 640px) {
+  @media (orientation: portrait ) {
+    .Outer {
+      width: 100%;
+      max-width: 80%;
+      padding: 1rem; /* Use relative units for padding */
+      font-size: 1rem; /* Use relative units for font size */
+      /* Adjust other styles as needed */
+    }
+
+    .hill {
+      width: 60px;
+      height: 80px;
+    }
+  }
+}
+
+.countdown-container{
+  width: 300px;
+  height: 300px;
+  padding: 5;
+  background-color: aqua;
+  border: 2px solid rgb(154, 154, 197);
+  border-radius: 10px;
+}
+
+.countdown-container p:first-child {
+  font-style: italic;
+  font-size: 5rem;
+  font-weight: 500;
+  color: black;
+
+}
+
+@media screen and (max-width:640px) {
+  .countdown-container { 
+    max-width: 640px;
+  }
+  .countdown-container p:nth-child(1) {
+      font-size:2.2rem;
+      font-style: italic;
+      font-weight: 900;
+  }
+}

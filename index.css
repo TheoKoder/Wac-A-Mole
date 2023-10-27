@@ -1,0 +1,68 @@
+body {
+    background-color: bisque;
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align vertically */
+    align-items: center; /* Center align horizontally */
+    background-image: url("./assets/bgA.jpeg"); /* Add your background image URL */
+    background-size: cover; /* Cover the entire viewport */
+    background-position:calc(50% + 10px - 5%);; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+.timer {
+  position: absolute;
+  top: 10px; /* Adjust as needed to control the vertical position */
+  left: 10px; /* Adjust as needed to control the horizontal position */
+}
+
+.gamePlay {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 950;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Add styling for the restart button */
+.restart-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for small devices below 640px */
+@media screen and (max-width: 640px) {
+    @media (orientation: landscape) {
+      /* Lock the app to landscape orientation */
+      body {
+        transform: rotate(90deg);
+        transform-origin: left top;
+        width: 100vh;
+        height: 100vw;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+  
+      /* Optionally, you can show a message to instruct users to rotate their device */
+      #landscape-instruction {
+        display: block;
+        /* Define your instruction styles here */
+      }
+
+    }
+  }
+   
+  
