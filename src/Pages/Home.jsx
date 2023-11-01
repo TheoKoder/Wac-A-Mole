@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import Wackmole from "../Components/wackmole";
+import Wackmole from "../Components/Wackmole";
 
 
 const Home = () => {
