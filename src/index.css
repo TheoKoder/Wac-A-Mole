@@ -1,0 +1,194 @@
+.app {
+    background-color: bisque;
+    margin: 0 auto; /* Remove default margin */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center; /* Center align vertically */
+    align-items: center; /* Center align horizontally */
+    background-image: url("./assets/bgA.jpeg"); /* Add your background image URL */
+    background-size: cover; /* Cover the entire viewport */
+    background-position:calc(50% + 10px - 5%);; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+.timer {
+  position: absolute;
+  top: 10px; /* Adjust as needed to control the vertical position */
+  left: 10px; /* Adjust as needed to control the horizontal position */
+}
+
+.gamePlay {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 950;
+  font-family: 'Courier New', Courier, monospace;
+}
+.panel{
+  background: gray;
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  text-align: left;
+  height: 300px;
+  width: 400px;
+}
+.icon{
+  background: teal;
+  border-radius: 100%;
+  padding: 10px;
+
+}
+.heading{
+  font-family: 1rem sans-serif;
+  font-weight: 500;
+  color: whitesmoke;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+/* Add styling for the restart button */
+.restart-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.restart-button:hover {
+  background-color: #0056b3;
+}
+.thank-you-message{
+  width: 300px;
+  height: 300px;
+  padding: 5;
+  background-color: aqua;
+  border: 2px solid rgb(154, 154, 197);
+  border-radius: 10px;
+}
+.text p:first-child{
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: wheat;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+.spBut{
+  color: yellow;
+}
+.rounded{
+  border-radius: 100%;
+  padding: 4px;
+  width: 16px;
+  background: blue;
+  display: flex;
+  flex-direction: column;
+}
+.grid{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  width: 50%;
+  height: 20%;
+}
+.back{
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+.ratBut{
+  border-radius: 100px;
+  padding: 2px;
+  width: 45px;
+  height: 50px;
+}
+.ratBut:focus{
+  background: #0056b3;
+}
+
+.ratBut:hover{
+  background: orange;
+}
+.subrating{
+  border-radius: 50px;
+  padding: 10px;
+  color: orange;
+  margin-bottom: 15px;
+  background: #fff;
+}
+.subrating:hover{
+  background: orange;
+  color: white;
+}
+.group{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.panel2{
+  background: gray;
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  text-align: center;
+  height: 450px;
+  width: 400px;
+}
+.hillThankYou {
+  width: 230px;
+  height: 150px;
+  border-radius: 80%;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+.ScoreRating{
+  width: 80%;
+  height: 20%;
+  color: orange;
+  padding: 4px;
+  background: black;
+  border-radius: 50px;
+}
+
+
+/* CSS for small devices below 640px */
+@media screen and (max-width: 640px) {
+    @media (orientation: portrait) {
+      /* Lock the app to landscape orientation */
+      .panel {
+        width: 90vw;
+        height: 100vw;
+        padding: 05%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+       }
+       .panel text p:nth-child(1){
+        font: size 0.25em;
+        color: cornsilk;
+        font-style: italic;
+        font-weight: 900;
+      }
+    .panel{
+      max-width: 260px;
+    }
+    .panel2{
+      max-width: 260px;
+    }
+    
+  }
+}
+   
+  

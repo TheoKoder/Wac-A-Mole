@@ -4,14 +4,7 @@
   background-color: bisque;
   grid-template-columns: repeat(3, 1fr);
 }
-.thank-you-message{
-  width: 300px;
-  height: 300px;
-  padding: 5;
-  background-color: aqua;
-  border: 2px solid rgb(154, 154, 197);
-  border-radius: 10px;
-}
+
 .score {
   display: flex;
   border: 2px solid green;
@@ -50,12 +43,29 @@
       font-size: 1rem; /* Use relative units for font size */
       /* Adjust other styles as needed */
     }
+    .panel {
+        width: 100%;
+        max-width: 80%;
+        padding: 1rem; /* Use relative units for padding */
+        font-size: 1rem; /* Use relative units for font size */
+        /* Adjust other styles as needed */
+      }
 
     .hill {
       width: 60px;
       height: 80px;
     }
   }
+}
+.quitButton{
+  position: absolute;
+  top: 10%; /* Adjust as needed to control the vertical position */
+  left: 80%; /* Adjust as needed to control the horizontal position */
+  border-radius: 30%;
+  display: none;
+  text-align: center;
+  font-size: 14px; /* Adjust the font size */
+  font-weight: bold; /* Add other styles as needed */
 }
 
 .countdown-container{
@@ -77,7 +87,8 @@
 
 @media screen and (max-width:640px) {
   .countdown-container { 
-    max-width: 640px;
+    max-width: 150px;
+    max-height: 180px;
   }
   .countdown-container p:nth-child(1) {
       font-size:2.2rem;
